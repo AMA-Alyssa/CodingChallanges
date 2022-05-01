@@ -13,13 +13,16 @@ Basements (negatives) stay the same as the universal level.
 -3  =>  -3 */
 
 
-
-
-
-const getRealFloor = n => {
-    if(n >= 13) return n - 2
-    if(n > 0) return n - 1
-    console.log(n);
+const circle = {
+  radius: 1, //property is used to hold values 
+  location:{
+      x:1,
+      y:1,
+  },
+  draw: function(){  //method is used to define logic
+      console.log('draw');
   }
-  
-  getRealFloor(20) //output 18
+
+}; //obj literal syntax
+
+circle.draw();

@@ -11,3 +11,16 @@ function index(array, n){
     //your code here
     return array[n] ** n || -1;
   }
+
+
+  function summerIsHere = (){
+    if(month === 'june'){
+      console.log('yay')
+    }if(month === 'july'){
+      console.log('yay')
+  }if(month === 'august'){
+    console.log('yay')
+  }else{
+    console.log('boo')
+  };
+}
