@@ -10,10 +10,20 @@
 //P:
 
 function descendingOrder(n){
-    //convert into a string
+    
+    str = n.toString().split('').sort((a,b)=> b-a)
+    joinStr=  str.join('')
+    num = Number(joinStr)
+    return num
+
+  } 
+  //convert into a string
     //split the string
     //rearrange the elements in the array to highest to smallest
     //join string
     //make a number 
-    //sort (a,b) => b-a
-  }
+    //sort (a,b) => b-a  //
+
+   
+  
+  
