@@ -10,3 +10,7 @@ function solution(str){
     let oMG = newArray.pop();
     return newArray.join('')
   };
+
+  function numberToString(num) {
+    return num.toString();
+  }
