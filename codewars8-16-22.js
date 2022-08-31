@@ -16,6 +16,28 @@
 //example  - look above
 //peusdo 
 
-function XO(str) {
-    //code here
+// function XO(str) {
+//     //code here
+// }
+
+
+function abbrevName(name){
+
+    // P given a string with two words
+    // R return the first letter of each word and have a period in between
+  // E  'Jon Smith'  --> 'J.S'
+  
+  //P  make 2 empty variable array 
+  //seperate the string into 2 arrays
+      //loop through each array,find the 0 index and put into the empty array
+  //make a 3 variable that adds the two others with a .
+  
+  
+  let arr1 = [ ];
+  let arr2 = [ ];
+  let seperateStr = name.split('');
+  return seperateStr
+  
+  
+
 }
