@@ -4,6 +4,6 @@ const authController = require('../controllers/auth')
 const homeController = require('../controllers/home')
 const { ensureAuth } = require('../middleware/auth')
 
-router.get('/', ensureAuth, homeController.getIndex)
+router.get('/', homeController.getIndex)
 
 module.exports = router
