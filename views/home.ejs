@@ -13,26 +13,21 @@
                <li><a  href="#home"> Home</a></li> 
                <li><a  href="#aboutUs"> About Us</a> </li> 
                <li><a   href="#/exercises"> Exercises</a> </li>  
-          <!--     <li> <span> Hi <%= user.userName %>! </span> </li> -->
+               <li> <span> Hi <%= user.userName %>! </span> </li> 
                <li> This is your fitness journey </li>
         </ul> 
 
     </nav>  
-    <h1>HOME PAGE:</h1> 
-    
-   <ul>
-    <% word.forEach( el => { %>
-            <li class='wordItem' data-id='<%=el._id%>'> </li>
-    <% }) %>    
-    </ul>
-
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>   
- <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter your word of choice" name='wordOfChoice'>
-        <input type="submit">
-    </form> 
-
-    <a href="/logout">Logout</a>  
+    <section>
+        <h1>ABC Workout:</h1> 
+    </section>
+    <section>
+        <h2> Word of the day</h2>
+        <ul>
+            <li></li>
+        </ul>
+    </section>
+  
 
     <script src="js/main.js"></script>
 </body>
