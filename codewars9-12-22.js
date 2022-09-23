@@ -13,21 +13,36 @@
     //e  Jon Alex ==> J.A
     //P
 
-    function initials(arr){
+    // function initials(arr){
 
-        //split the name into two elements
-        //grab the first letter in each word
-        //use temperal literals 
+    //     //split the name into two elements
+    //     //grab the first letter in each word
+    //     //use temperal literals 
 
-        let newArr = arr.toUpperCase().split(' ');
-        //return newArr
-        return `${newArr[0][0]}.${newArr[1][0]}`
-        return newInitials;
-
-
+    //     let newArr = arr.toUpperCase().split(' ');
+    //     //return newArr
+    //     return `${newArr[0][0]}.${newArr[1][0]}`
+    //     return newInitials;
 
 
-    }
+
+
+    // }
+
+    function hello(x){
+
+        //empty variable
+        //loop through the array and square it
+        
+        let sum = 0;
+        for(let i = 0; i <x.legnth; i++{
+        
+        sum += Math.pow(i,2)
+        }
+        
+        return sum;
+        
+        }
 
 
 
