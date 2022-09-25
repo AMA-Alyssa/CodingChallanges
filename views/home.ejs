@@ -29,31 +29,30 @@
        
         <form action="/home/createWorkout" method="POST">
           <input type="text" name="workout" placeholder="enter word">
-          <input type="submit">Submit</button>
-      </form>
+          
 
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown button
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Lower Body</a>
-      <a class="dropdown-item" href="#">Upper Body</a>
-      <a class="dropdown-item" href="#">Abs + HIIT</a>
-      <a class="dropdown-item" href="#">Total Body</a>
-    </div>
-</div>
-<div class="set dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      # of Sets
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">1</a>
-      <a class="dropdown-item" href="#">2</a>
-      <a class="dropdown-item" href="#">3</a>
-      
-    </div>
-</div>
+        <select name="bodyFocus" class="form-select" aria-label="Select Type">
+          <option selected>Body Focus</option>
+          <option value="lower body">Lower Body</option>
+          <option value="abs + HIIT">Abs + HIIT</option>
+          <option value="upper body">Upper Body</option>
+          <option value="total body">Total Body</option>
+        </select>
+        
+        <input type="submit"></button>
+        </form>
+   
+  
+    
+   
+    </section>
+    <section>
+      <ul class = 'exerciseList'>
+        <% for(let i=0; i <workouts.length; i++) {%>
+          <li> <span><%= workouts[i].letter %></span> <span><%= workouts[i].exercise %></span> <span><%= workouts[i].reps %></span></li>
+       
+        <% } %>
+      </ul>
     </section>
    
     

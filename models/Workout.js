@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const AlphabetSchema = new mongoose.Schema({
+const WorkoutSchema = new mongoose.Schema({
     letter: {
       type: String,
       required: true,
@@ -24,4 +24,4 @@ const AlphabetSchema = new mongoose.Schema({
    
   });
 
-  module.exports = mongoose.model("Workout", AlphabetSchema);
+  module.exports = mongoose.model("Workout", WorkoutSchema);

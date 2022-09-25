@@ -5,6 +5,10 @@ h1{
     text-decoration: line-through;
     color: gray;
 }
-.not{
+/* .not{
     text-decoration: underline;
+} */
+
+.exerciseList{
+    color: red
 }
