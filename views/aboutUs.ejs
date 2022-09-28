@@ -13,47 +13,23 @@
         <ul>
                <li><a  href="/home"> Home</a></li> 
                <li><a  href="/home/aboutus"> About Us</a> </li> 
-               <li><a   href="/home/searchExercise"> Exercises</a> </li>  
+               <li><a   href="#/exercises"> Exercises</a> </li>  
                <li> <span> Hi <%= user.userName %>! </span> </li> 
                <li> This is your fitness journey </li>
         </ul> 
 
     </nav>  
     <section>
-        <h1>ABC Workout:</h1> 
+        <h1>My Story</h1> 
         
     </section>
     <section>
-        <h2>Get A New Body Weight Work Out</h2>
-        <p> Enter your name or any word that inspires you, then select the type of work out you want.</p>
-       
-        <form action="/home/createWorkout" method="POST">
-          <input type="text" name="workout" placeholder="enter word">
-          
-
-        <select name="bodyFocus" class="form-select" aria-label="Select Type">
-          <option selected>Body Focus</option>
-          <option value="lower body">Lower Body</option>
-          <option value="abs + HIIT">Abs + HIIT</option>
-          <option value="upper body">Upper Body</option>
-          <option value="total body">Total Body</option>
-        </select>
-        
-        <input type="submit"></button>
-        </form>
-   
-        
+        <h2>Lorem ipsum dolor sit amet consectetur .</h2>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, nulla quibusdam debitis possimus impedit vero aliquam. Aperiam error fugit quas nulla, placeat ex adipisci minus totam ut magnam rem? 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa explicabo vitae blanditiis ut earum beatae dolorem recusandae repellendus eum, nesciunt nam necessitatibus magnam iste ducimus porro natus aliquid sequi quae?
+        </p>
+    </section>
     
-   
-    </section>
-    <section>
-      <ul class = 'exerciseList'>
-        <% for(let i=0; i <workouts.length; i++) {%>
-          <li> <span class= 'letter '><%= workouts[i].letter %>:</span> <span class = 'exercise'><%= workouts[i].exercise %></span> <span class = 'reps'> Reps: <%= workouts[i].reps %></span> </li>
-       
-        <% } %>
-      </ul>
-    </section>
    
     
   
