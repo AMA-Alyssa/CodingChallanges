@@ -21,12 +21,12 @@ This is an exercise App that supplies different exercises based on the body focu
 ---
 # What I plan on adding:
 
--A warning that the user should consult with their doctor before using this App, other legal terms, etc.
-- A timer on the home page
--A daily random word that inspires users with the definition and synonyms. The daily word will render on the home page and will include exercises for each letter.
--On the exercise page, the user can search for each exercise. It will include detail instructions and images or video of the exercise being performed.
--How To Page: This page will explain how the user can make these exercises work for them. It will include how to increase or decrease the difficulty levels.
--User Profile page: It will have the user's stats on how many times they complete a workout and their exercise streak. 
+     -A warning that the user should consult with their doctor before using this App, other legal terms, etc.
+     -A timer on the home page
+     -A daily random word that inspires users with the definition and synonyms. The daily word will render on the home page and will include exercises for each  letter.
+     -On the exercise page, the user can search for each exercise. It will include detail instructions and images or video of the exercise being performed.
+     -How To Page: This page will explain how the user can make these exercises work for them. It will include how to increase or decrease the difficulty levels.
+     -User Profile page: It will have the user's stats on how many times they complete a workout and their exercise streak. 
 
 ---
 
