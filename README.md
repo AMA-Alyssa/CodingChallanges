@@ -1,22 +1,32 @@
-# Introduction
+# Introduction:
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
+This is an exercise App that supplies different exercises based on the body focus when the user inputs their name or any word that inspires them. This is built using the MVC Architecture and has "authorization" implemented. 
 
----
 
-> Be sure to add that lovely star 😀 and fork it for your own copy
+# Objectives:
 
----
-
-# Objectives
-
-- It's a beginner level app created to understand how MVC concept and logins are added
+- This exercise App strives to inspire people to exercise and have a variety in their workout routine regardless of where they are at. All the exercises are body weight only and are divided into 4 categories: lower body, upper body, abs + HIIT, and total body. The user is encourage to mix it up and input fun words that brings excitement and a challenge. This workout is what you make of it, it all depends on how hard you push yourself. Each day strive to beat yourself!
 
 ---
 
 # Who is this for? 
 
-- It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
+- This App is for anyone....
+     - Who wants variety in their workouts
+     - Doesn't want to plan their workouts in advance
+     - Who travels
+     - Who don't have exercise equipment
+     - That wants a challenge
+
+---
+# What I plan on adding:
+
+-A warning that the user should consult with their doctor before using this App, other legal terms, etc.
+- A timer on the home page
+-A daily random word that inspires users with the definition and synonyms. The daily word will render on the home page and will include exercises for each letter.
+-On the exercise page, the user can search for each exercise. It will include detail instructions and images or video of the exercise being performed.
+-How To Page: This page will explain how the user can make these exercises work for them. It will include how to increase or decrease the difficulty levels.
+-User Profile page: It will have the user's stats on how many times they complete a workout and their exercise streak. 
 
 ---
 
@@ -39,6 +49,6 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
   - DB_STRING: `your database URI` 
  ---
  
- Have fun testing and improving it! 😎
+ Have fun!!! 😎
 
 
