@@ -2,7 +2,7 @@ const Workout = require("../models/Workout");
 
 exports.getHome =  (req,res)=>{
     workouts = []
-    res.render('home.ejs', {user: req.user, workouts});
+    res.render('home.ejs', {user: req.user, workouts, layout:'./layouts/main'});
 }
 
 exports.createWorkout = async (req, res) => {

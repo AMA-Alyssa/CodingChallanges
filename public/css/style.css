@@ -1,14 +1,10 @@
-h1{
+/*h1{
     color: red;
 }
 .completed{
     text-decoration: line-through;
     color: gray;
-}
-/* .not{
-    text-decoration: underline;
 } */
 
-.exerciseList{
-    color: red
-}
+
+
