@@ -1,14 +1,18 @@
 
-   
-    <section>
-        <h1>ABC Workout:</h1> 
-        
-    </section>
-
-    <section>
+  <div class ='container text-center' >
+    <div class ='row red'>
+      <div class ='col'>
+          <h1>ABC Workout:</h1> 
+      </div> 
+    </div>
+  <div class ='row'>
+    <div class ='col'>
         <h2>Get A New Body Weight Work Out</h2>
         <p> Enter your name or any word that inspires you, then select the type of work out you want.</p>
-       
+    </div>
+  </div>
+  <div class ='row'>
+    <div class = 'col'>
         <form action="/home/createWorkout" method="POST">
           <input type="text" name="workout" placeholder="enter word">
           <select name="bodyFocus" class="form-select" aria-label="Select Type">
@@ -19,17 +23,28 @@
             <option value="total body">Total Body</option>
           </select>
           <input type="submit"></button>
-        </form>    
+        </form>  
+      </div>  
+  </div>
+  <div class = 'row'>
+    <ul class = 'exerciseList'>
+      <% if (exercise === null){ %>
+        <% console.log('Empty Object') %>
+      <%} else { %>
+        <%   let workouts =exercise.workouts  %>
+        <%  workouts.forEach(workout => { %>
+          <li>  <span> <%= workout.letter %> </span>
+                <span> <%= workout.exercise %> </span>
+                <span> <%=  workout.reps %> </span>
+           </li> 
+         <% }) %>
    
-    </section>
-    <section>
-       <ul class = 'exerciseList'>
-        <% for(let i=0; i <workouts.length; i++) {%>
-          <li> <span class= 'letter '><%= workouts[i].letter %>:</span> <span class = 'exercise'><%= workouts[i].exercise %></span> <span class = 'reps'> Reps: <%= workouts[i].reps %></span> </li>
+          
+      <% } %>
        
-        <% } %> 
-      </ul>
-    </section>
+    </ul>
+  </div>
+</div>
    
     
     

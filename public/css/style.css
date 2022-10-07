@@ -1,10 +1,9 @@
-/*h1{
-    color: red;
-}
 .completed{
     text-decoration: line-through;
     color: gray;
-} */
+} 
 
-
+.red{
+    background-color: red;
+}
 

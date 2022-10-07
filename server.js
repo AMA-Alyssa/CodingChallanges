@@ -22,12 +22,15 @@ connectDB()
 //set templating engine
 app.use(expressLayouts)
 app.set('layout', './layouts/main')
-
 app.set('view engine', 'ejs')
+
 app.use(express.static('public'))
+app.use('/css', express.static(__dirname + 'public/css'))
+
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(logger('dev'))
+
 // Sessions
 app.use(
     session({
@@ -44,7 +47,7 @@ app.use(passport.session())
 
 app.use(flash())
 
-
+//routes
 app.use('/', mainRoutes)
 app.use('/home', homeRoutes)
  
