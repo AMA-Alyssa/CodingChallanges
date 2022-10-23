@@ -1,4 +1,6 @@
-// Given an array of digital numbers, return a new array of length number containing the last even numbers from the original array (in the same order). The original array will be not empty and will contain at least "number" even numbers.
+// Given an array of digital numbers, return a new array of length number containing the
+// last even numbers from the original array (in the same order). 
+//The original array will be not empty and will contain at least "number" even numbers.
 
 // For example:
 
@@ -11,12 +13,12 @@
 //return new arr based on the num given,  and you want even nums
 
 
-function evenNums(arr) {
+function evenNums(arr, x) {
     //filter the positve numbers by n %2 === 0 
     let evenArr = arr.filter((n => n % 2 === 0))
     //slice on the new array from filter starting at the end of the array
     //return evenArr
-    return evenArr.slice();
+    return evenArr.slice(-x);
   
   }
   
