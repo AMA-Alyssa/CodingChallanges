@@ -21,6 +21,7 @@ function evenNums(arr, x) {
     return evenArr.slice(-x);
   
   }
+  //yesss
   
   console.log((evenNums([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2))) // [-8, 26]
   
