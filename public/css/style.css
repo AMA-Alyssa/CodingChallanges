@@ -1,14 +1,7 @@
-h1{
-    color: red;
-}
-.completed{
-    text-decoration: line-through;
-    color: gray;
-}
-/* .not{
-    text-decoration: underline;
-} */
 
-.exerciseList{
-    color: red
+
+.row{
+    
+    font-family: 'Roboto Condensed', sans-serif;
 }
+

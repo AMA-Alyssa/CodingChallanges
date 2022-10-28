@@ -1,8 +1,9 @@
+const Exercise = require("../models/Exercise");
 const Workout = require("../models/Workout");
 
-exports.getHome =  (req,res)=>{
-    workouts = []
-    res.render('home.ejs', {user: req.user, workouts});
+exports.getHome =  async (req,res)=>{
+    const exercises = await Exercise.findOne().sort({ createdAt : 'desc' }).populate({path:'workouts', select:'_id letter exercise reps'})
+    res.render('home.ejs', {user: req.user, exercise: exercises, layout:'./layouts/main'});
 }
 
 exports.createWorkout = async (req, res) => {
@@ -29,11 +30,9 @@ exports.createWorkout = async (req, res) => {
             }
         } 
 
-        console.log(newArray)
-        res.render('home.ejs', {
-            user: req.user,
-            workouts: newArray
-        }); 
+        await Exercise.create({userId: req.user.id, workouts:newArray})
+
+        res.redirect('/home')
 
     } catch(err){
         console.log(err)

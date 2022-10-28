@@ -9,6 +9,7 @@ const logger = require('morgan')
 const connectDB = require('./config/database')
 const homeRoutes = require('./routes/home')
 const mainRoutes = require('./routes/main')
+const expressLayouts = require('express-ejs-layouts')
 
 
 require('dotenv').config({path: './config/.env'})
@@ -18,11 +19,17 @@ require('./config/passport')(passport)
 
 connectDB()
 
+//set templating engine
+app.use(expressLayouts)
+app.set('layout', './layouts/main')
 app.set('view engine', 'ejs')
-app.use(express.static('public'))
+
+app.use('/public', express.static(__dirname + '/public'))
+
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(logger('dev'))
+
 // Sessions
 app.use(
     session({
@@ -39,7 +46,7 @@ app.use(passport.session())
 
 app.use(flash())
 
-
+//routes
 app.use('/', mainRoutes)
 app.use('/home', homeRoutes)
  
