@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Heuristica-Regular
+font link: https://www.fontsquirrel.com/fonts/heuristica
+font author: Andrej Panov
+font author site: 
+
+
+icon designer: Kayla Valencia
+icon designer link: /createdby_kayla
+        
+{"bg":"transparent","icon-gradient-0":"#49247E","icon-gradient-1":"#AA49C7","font":"#000000","slogan":"#141414"}
+      

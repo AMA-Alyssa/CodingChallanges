@@ -24,8 +24,7 @@ app.use(expressLayouts)
 app.set('layout', './layouts/main')
 app.set('view engine', 'ejs')
 
-app.use(express.static('public'))
-app.use('/css', express.static(__dirname + 'public/css'))
+app.use('/public', express.static(__dirname + '/public'))
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
