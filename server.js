@@ -19,12 +19,15 @@ require('./config/passport')(passport)
 
 connectDB()
 
+app.use('/public', express.static(__dirname + '/public'))
+
 //set templating engine
-app.use(expressLayouts)
-app.set('layout', './layouts/main')
 app.set('view engine', 'ejs')
 
-app.use('/public', express.static(__dirname + '/public'))
+app.use(expressLayouts)
+
+app.set('layout', './layouts/main')
+
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())

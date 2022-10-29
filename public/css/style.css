@@ -11,3 +11,26 @@
    
 }
 
+
+
+h1{
+  color:blueviolet;
+}
+
+ul{
+  list-style:none;
+  text-align: left;
+}
+
+.workout-list {
+  width: 450px;
+  height: auto;
+}
+
+.workout-list{
+  margin-top: 3rem;
+  background-color: rgb(217,179,255);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 3px 10px;
+}
