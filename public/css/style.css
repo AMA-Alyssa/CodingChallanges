@@ -1,5 +1,9 @@
 
-
+/*font choices
+font-family: 'Alice', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Vidaloka', serif;  */
 .row{
     
     font-family: 'Roboto Condensed', sans-serif;
@@ -14,8 +18,20 @@
 
 
 h1{
-  color:blueviolet;
+  color: rgb(225, 132, 19);
+  font-family: 'Merriweather';
+  font-size: 4rem;
+  padding-top:15%;
+ 
 }
+
+p{
+  color:rgb(79, 79, 79);
+  font-family: 'Merriweather';
+  font-size: 2.5rem;
+  padding-top:10%
+}
+
 
 ul{
   list-style:none;
@@ -23,14 +39,47 @@ ul{
 }
 
 .workout-list {
-  width: 450px;
+  width: auto;
   height: auto;
 }
 
 .workout-list{
   margin-top: 3rem;
-  background-color: rgb(217,179,255);
+  background-color: rgba(245, 185, 66);
   padding-top: 2rem;
   padding-bottom: 2rem;
   box-shadow: 0 3px 10px;
+}
+
+.letter{
+  color: black;
+  font-family: 'Merriweather';
+  font-size: 2.5rem;
+  text-decoration: underline;
+
+  
+}
+
+.exercise {
+  color: rgb(40, 36, 36);
+  font-family: 'Merriweather';
+  font-size: 1.5rem;
+  padding-left: 5%;
+  
+}
+
+.reps {
+  color: black;
+  font-family: 'Merriweather';
+  font-size: 1.5rem;
+}
+
+/*body {
+  background-image: url('../images/undraw_pilates_gpdb\ \(1\).svg');
+  background-repeat: no-repeat, repeat;
+  background-color:white;
+}*/ 
+
+.button{
+  color: light orange;
 }
